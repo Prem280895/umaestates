@@ -1,0 +1,182 @@
+[debug] [2021-01-09T09:16:08.026Z] ----------------------------------------------------------------------
+[debug] [2021-01-09T09:16:08.029Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\premk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-09T09:16:08.030Z] CLI Version:   9.1.2
+[debug] [2021-01-09T09:16:08.030Z] Platform:      win32
+[debug] [2021-01-09T09:16:08.030Z] Node Version:  v12.16.1
+[debug] [2021-01-09T09:16:08.031Z] Time:          Sat Jan 09 2021 03:16:08 GMT-0600 (Central Standard Time)
+[debug] [2021-01-09T09:16:08.031Z] ----------------------------------------------------------------------
+[debug] [2021-01-09T09:16:08.031Z] 
+[debug] [2021-01-09T09:16:08.041Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-09T09:16:08.041Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\premk\Desktop\uma-estates
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-09T09:16:35.890Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2021-01-09T09:16:37.145Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:16:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project umaestates-8cfae (umaestates) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-01-09T09:16:45.719Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/umaestates-8cfae/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-01-09T09:16:46.153Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:16:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-01-09T09:16:46.155Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/umaestates-8cfae/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-01-09T09:16:47.176Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:16:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:16:57.178Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/umaestates-8cfae/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-01-09T09:16:57.417Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:16:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-01-09T09:16:57.423Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/umaestates-8cfae  
+ 
+[debug] [2021-01-09T09:16:58.033Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:16:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-01-09T09:18:10.291Z] ----------------------------------------------------------------------
+[debug] [2021-01-09T09:18:10.293Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\premk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-09T09:18:10.294Z] CLI Version:   9.1.2
+[debug] [2021-01-09T09:18:10.294Z] Platform:      win32
+[debug] [2021-01-09T09:18:10.294Z] Node Version:  v12.16.1
+[debug] [2021-01-09T09:18:10.295Z] Time:          Sat Jan 09 2021 03:18:10 GMT-0600 (Central Standard Time)
+[debug] [2021-01-09T09:18:10.295Z] ----------------------------------------------------------------------
+[debug] [2021-01-09T09:18:10.295Z] 
+[debug] [2021-01-09T09:18:10.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-09T09:18:10.305Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\premk\Desktop\uma-estates
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-01-09T09:18:56.834Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"umaestateproject","name":"firstproject"}
+[debug] [2021-01-09T09:18:57.633Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:18:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=252","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:18:57.635Z] > refreshing access token with scopes: []
+[debug] [2021-01-09T09:18:57.636Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-09T09:18:58.246Z] <<< HTTP RESPONSE 200 {"date":"Sat, 09 Jan 2021 09:18:56 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:18:58.262Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 [none]
+[debug] [2021-01-09T09:18:58.866Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 200
+[debug] [2021-01-09T09:18:58.866Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 {"name":"operations/cp.5908424930453779106"}
+[debug] [2021-01-09T09:18:59.374Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-01-09T09:18:59.375Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 [none]
+[debug] [2021-01-09T09:19:00.089Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 200
+[debug] [2021-01-09T09:19:00.089Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 {"name":"operations/cp.5908424930453779106","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2021-01-09T09:19:01.091Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-01-09T09:19:01.091Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 [none]
+[debug] [2021-01-09T09:19:01.523Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 200
+[debug] [2021-01-09T09:19:01.523Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5908424930453779106 {"name":"operations/cp.5908424930453779106","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"498413725005","projectId":"umaestateproject","lifecycleState":"ACTIVE","name":"firstproject","createTime":"2021-01-09T09:18:55.909Z"}}
+[debug] [2021-01-09T09:19:01.526Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-09T09:19:01.526Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-09T09:19:02.135Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 09 Jan 2021 09:19:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:19:02.149Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/umaestateproject:addFirebase  
+ 
+[debug] [2021-01-09T09:19:04.184Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Jan 2021 09:19:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:19:04.186Z] > refreshing access token with scopes: []
+[debug] [2021-01-09T09:19:04.187Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-09T09:19:04.798Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 09 Jan 2021 09:19:03 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-09T09:19:04.813Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy [none]
+[debug] [2021-01-09T09:19:05.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy 200
+[debug] [2021-01-09T09:19:05.825Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy {"name":"operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy"}
+[debug] [2021-01-09T09:19:06.330Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-09T09:19:06.331Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy [none]
+[debug] [2021-01-09T09:19:06.849Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy 200
+[debug] [2021-01-09T09:19:06.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy {"name":"operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy"}
+[debug] [2021-01-09T09:19:07.859Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-09T09:19:07.860Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy [none]
+[debug] [2021-01-09T09:19:08.289Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy 200
+[debug] [2021-01-09T09:19:08.290Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy {"name":"operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy"}
+[debug] [2021-01-09T09:19:10.293Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-09T09:19:10.293Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy [none]
+[debug] [2021-01-09T09:19:10.950Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy 200
+[debug] [2021-01-09T09:19:10.951Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy {"name":"operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy"}
+[debug] [2021-01-09T09:19:14.954Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-01-09T09:19:14.956Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy [none]
+[debug] [2021-01-09T09:19:15.259Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy 200
+[debug] [2021-01-09T09:19:15.260Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy {"name":"operations/workflows/YmNkM2NmMDQtZGIxNi00NGJlLWI2MjgtYzQzNDMwYjRiM2Iy","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"umaestateproject","projectNumber":"498413725005","displayName":"firstproject","name":"projects/umaestateproject","resources":{"hostingSite":"umaestateproject"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: umaestateproject
+[info]    - Project Name: firstproject
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/umaestateproject/overview
+[info] i  Using project umaestateproject (firstproject) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2021-01-09T09:19:59.408Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-01-09T09:19:59.697Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-01-09T09:19:59.698Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.2","browserURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.2/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.2/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.2/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\premk 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=872947007&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-01-09T09:21:19.250Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"fe7d337368c1ae2815e9","redirect_uri":"http://localhost:9005","state":"872947007"}
+[debug] [2021-01-09T09:21:19.562Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 09 Jan 2021 09:21:17 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"17508a71e711a9ed36d18cfe85c9f9b5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"FF8E:3789:5AD265:8F707A:5FF9758D"}
+[debug] [2021-01-09T09:21:19.563Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-01-09T09:21:20.024Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-01-09T09:21:20.024Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Prem280895","id":46985056,"node_id":"MDQ6VXNlcjQ2OTg1MDU2","avatar_url":"https://avatars1.githubusercontent.com/u/46985056?v=4","gravatar_id":"","url":"https://api.github.com/users/Prem280895","html_url":"https://github.com/Prem280895","followers_url":"https://api.github.com/users/Prem280895/followers","following_url":"https://api.github.com/users/Prem280895/following{/other_user}","gists_url":"https://api.github.com/users/Prem280895/gists{/gist_id}","starred_url":"https://api.github.com/users/Prem280895/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Prem280895/subscriptions","organizations_url":"https://api.github.com/users/Prem280895/orgs","repos_url":"https://api.github.com/users/Prem280895/repos","events_url":"https://api.github.com/users/Prem280895/events{/privacy}","received_events_url":"https://api.github.com/users/Prem280895/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":5,"public_gists":0,"followers":0,"following":0,"created_at":"2019-01-24T03:42:21Z","updated_at":"2021-01-09T09:20:11Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":117,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Prem280895 
+[info] 
+[debug] [2021-01-09T09:21:47.630Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-01-09T09:21:48.237Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-01-09T09:21:48.237Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-01-09T09:21:48.399Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-01-09T09:21:49.054Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-01-09T09:21:49.054Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-01-09T09:21:50.514Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-01-09T09:21:51.068Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-01-09T09:21:51.080Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-01-09T09:21:51.080Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-01-09T09:21:51.716Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-01-09T09:21:51.716Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
